@@ -5,8 +5,8 @@ import { Box } from '@mui/system';
 import { DarkTheme, LightTheme } from './../themes';
 
 interface IThemeContextData {
-  themeName: 'light' | 'dark';
-  toggleTheme: () => void;
+  themeName: 'light' | 'dark'
+  toggleTheme: () => void
 }
 
 const ThemeContext = createContext({} as IThemeContextData);
@@ -30,7 +30,6 @@ export const AppThemeProvider: React.FC<IAppThemeProviderProps> = ({ children })
 
     return DarkTheme;
   }, [themeName]);
-
 
   return (
     <ThemeContext.Provider value={{ themeName, toggleTheme }}>

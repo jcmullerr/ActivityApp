@@ -1,9 +1,9 @@
 import './App.css';
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './routes';
 import { AppThemeProvider } from './shared/contexts';
 
-function App() {
+function App () {
   return (
     <AppThemeProvider>
       <BrowserRouter>
