@@ -44,12 +44,8 @@ const LoginComponent = () => {
                 flexDirection={"column"}
                 alignItems="center"
                 justifyContent={'center'}
-                margin='auto'
                 marginTop={5}
                 padding={3}
-            // borderRadius={5}
-            // boxShadow={'5px 5px 10px #ccc'}
-            // sx={{ ":hover": { boxShadow: '10px 10px 20px #ccc' } }}
             >
                 <Typography variant='h2' padding={3} textAlign='center'>{isSignup ? 'Signup' : 'Login'}</Typography>
                 {isSignup && <TextField name='name' value={inputs.name} onChange={handleChange} margin='normal' type={'text'} variant='outlined' placeholder='Name' />}
