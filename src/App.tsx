@@ -1,6 +1,5 @@
 import './App.css';
-import LoginComponent from './shared/components/loginComponent/loginComponent';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom';
 import { AppRoutes } from './routes';
 import { AppThemeProvider } from './shared/contexts';
 

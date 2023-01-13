@@ -19,7 +19,6 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,6 +46,17 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-standard-with-typescript": "^27.0.1",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.0",
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.9.4"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
