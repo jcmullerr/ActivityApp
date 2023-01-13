@@ -2,12 +2,15 @@ import './App.css';
 import LoginComponent from './shared/components/loginComponent/loginComponent';
 import {BrowserRouter} from 'react-router-dom'
 import { AppRoutes } from './routes';
+import { AppThemeProvider } from './shared/contexts';
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <AppThemeProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </AppThemeProvider>
   );
 }
 
