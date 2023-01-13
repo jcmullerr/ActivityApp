@@ -1,11 +1,13 @@
 import './App.css';
 import LoginComponent from './shared/components/loginComponent/loginComponent';
+import {BrowserRouter} from 'react-router-dom'
+import { AppRoutes } from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <LoginComponent />
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
