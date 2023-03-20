@@ -2,12 +2,15 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './routes';
 import { AppThemeProvider } from './shared/contexts';
+import { SideMenu } from './shared/components/sideMenu/sideMenu';
 
 function App () {
   return (
     <AppThemeProvider>
       <BrowserRouter>
-        <AppRoutes />
+        <SideMenu>
+          <AppRoutes />
+        </SideMenu>
       </BrowserRouter>
     </AppThemeProvider>
   );
